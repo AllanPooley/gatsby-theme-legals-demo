@@ -35,7 +35,11 @@ class Index extends Component {
           <Wrapper>
             <div className="container">
               <div className="inner-container">
-                <h1>Gatsby Theme Legals</h1>
+                <h1 className="title">Gatsby Theme Legals</h1>
+                <div className="subtitle">
+                  <p>Making legal documents easy to read.</p>
+                  <p>Check out the demos below.</p>
+                </div>
                 <ul className="navigation-buttons">
                   { legalPageData && legalPageData.map(page => (
                     <li className="nav-button">
