@@ -11,11 +11,11 @@ button {
 }
 
 .styled-button {
-  min-width: 250px;
+  display: inline-block;
   border-radius: 36px;
-  background-color: transparent;
-  padding: 15px 35px;
-  border: 2px solid $white;
+  background-color: $primary;
+  padding: 10px 20px;
+  text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
 
   @include media-down(mobile) {
@@ -23,14 +23,18 @@ button {
     padding: 8px 20px;
   }
 
-  &:hover {
-    background-color: rgba($white, 0.1);
-    cursor: pointer;
+  span {
+    display: block;
+    width: 100%;
+    color: $white;
+    font-size: 14px;
+    font-size: $font-weight-bold;
+    text-align: center;
   }
 
-  &.active {
-    color: $black;
-    background-color: $white;
+  &:hover {
+    background-color: darken($primary, 10%);
+    cursor: pointer;
   }
 
   &:focus, &:active {

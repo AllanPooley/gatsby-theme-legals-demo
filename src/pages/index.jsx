@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { graphql, Link } from 'gatsby';
 import { Layout } from '../components';
 import { Wrapper } from '../components/common';
+import './index.scss';
 
 class Index extends Component {
   render() {
@@ -30,23 +31,28 @@ class Index extends Component {
     }));
     return (
       <Layout location={location} seoData={seoData}>
-        <Wrapper>
-          <section className="home-hero">
-            <h1>Gatsby Theme Legals</h1>
-            <ul>
-              { legalPageData && legalPageData.map(page => (
-                <li>
-                  <Link
-                    key={page.slug}
-                    to={page.slug}
-                  >
-                    {page.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </Wrapper>
+        <section className="home-hero">
+          <Wrapper>
+            <div className="container">
+              <div className="inner-container">
+                <h1>Gatsby Theme Legals</h1>
+                <ul className="navigation-buttons">
+                  { legalPageData && legalPageData.map(page => (
+                    <li className="nav-button">
+                      <Link
+                        className="styled-button"
+                        key={page.slug}
+                        to={page.slug}
+                      >
+                        <span>{page.title}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </Wrapper>
+        </section>
       </Layout>
     );
   }

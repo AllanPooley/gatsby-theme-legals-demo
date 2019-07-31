@@ -14,11 +14,11 @@ $font-weight-extra-bold: 800;
 $font-weight-black: 900;
 
 @mixin headings-font() {
-  font-family: 'Karla', Sans-Serif;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
 }
 
 @mixin body-font() {
-  font-family: 'Lato', Sans-Serif;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
 }
 
 @mixin h1($dark-font: false) {

@@ -6,10 +6,11 @@ $wrap-width: 1440px;
 /*=============================================>>>>>
 = Brand colours =
 ===============================================>>>>>*/
-$primary: #01a4b7;
+$primary: #742CA7;
 $secondary: #2b4b5a;
 $tertiary: #9fb3bc;
 $highlight: #542537;
+$primary-lighter: #BB75D1;
 $primary-darker: darken($primary, 5%);
 $secondary-darker: darken($secondary, 5%);
 
@@ -23,7 +24,7 @@ $border: #D8E5EE;
 ===============================================>>>>>*/
 $white: #ffffff;
 $black: #000000;
-$off-white: rgba(#BDC6D1, 0.35);
+$off-white: #FCFAFF;
 $off-black: #1E1E1E;
 $grey: #D8D8D8;
 

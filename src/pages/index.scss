@@ -1,0 +1,36 @@
+.home-hero {
+  background-color: $primary;
+  padding: 80px;
+
+  .container {
+    position: relative;
+
+    .inner-container {
+      background-color: $off-white;
+      padding: 120px 60px 100px;
+      position: relative;
+      z-index: 2;
+
+      .navigation-buttons {
+        display: flex;
+        flex-direction: row;
+
+        .nav-button {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: translateX(2.5vh) translateY(2.5vh);
+      z-index: 1;
+      background-color: $primary-lighter;
+    }
+  }
+}
