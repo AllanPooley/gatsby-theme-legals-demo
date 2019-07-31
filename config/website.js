@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Little & Big - Websites With Character', // Navigation and Site Title
-  titleAlt: 'Little & Big', // Title for JSONLD
-  description: 'Design and Development Studio based in Sydney Australia. We build Websites, Apps, E-commerce with character',
+  title: 'Gatsby Prismic Legals', // Navigation and Site Title
+  titleAlt: 'Gatsby Prismic Legals', // Title for JSONLD
+  description: '',
   headline: 'Websites with Character', // Headline for schema.org JSONLD
   url: 'https://www.littleandbig.com.au', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
@@ -20,8 +20,4 @@ module.exports = {
   facebook: 'littleandbig', // Facebook Site Name
 
   skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
-
-  // Slugs
-  blogSlug: 'blog',
-  categorySlug: 'category',
 };

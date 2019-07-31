@@ -7,8 +7,6 @@ const {
   IS_STAGING,
   PRISMIC_REPO_NAME,
   PRISMIC_API_KEY,
-  GOOGLE_ANALYTICS_ID,
-  // MAILCHIMP_ENDPOINT,
 } = process.env;
 
 const prismicHtmlSerializer = require('./src/gatsby/htmlSerializer');
@@ -72,26 +70,11 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: '@littleplusbig/gatsby-theme-legals-prismic',
       options: {
-        trackingId: GOOGLE_ANALYTICS_ID,
-      },
-    },
-    // {
-    //   resolve: 'gatsby-plugin-mailchimp',
-    //   options: {
-    //     endpoint: MAILCHIMP_ENDPOINT,
-    //   },
-    // },
-    {
-      resolve: 'gatsby-source-prismic',
-      options: {
-        repositoryName: PRISMIC_REPO_NAME,
-        accessToken: PRISMIC_API_KEY,
-        // Get the correct URLs in blog posts
-        linkResolver: () => post => `/${post.uid}`,
-        // PrismJS highlighting for labels and slices
-        htmlSerializer: () => prismicHtmlSerializer,
+        prismicRepositoryName: PRISMIC_REPO_NAME,
+        prismicAccessToken: PRISMIC_API_KEY,
+        siteName: website.title,
       },
     },
     'gatsby-plugin-lodash',

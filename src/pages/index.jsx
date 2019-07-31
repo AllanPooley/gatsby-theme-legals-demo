@@ -8,12 +8,11 @@ class Index extends Component {
     const {
       data: {
         page: {
-          data: pageData
-        }
+          data: pageData,
+        },
       },
       location,
     } = this.props;
-    console.log('Props @ Home', this.props);
     const {
       metaTitle,
       metaDescription,
@@ -38,11 +37,6 @@ export default Index;
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        blogSlug,
-      }
-    },
     page: prismicHome {
       uid,
       data {
