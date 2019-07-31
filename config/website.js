@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Gatsby Prismic Legals', // Navigation and Site Title
-  titleAlt: 'Gatsby Prismic Legals', // Title for JSONLD
+  title: 'Gatsby Theme Prismic Legals', // Navigation and Site Title
+  titleAlt: 'Gatsby Theme Prismic Legals', // Title for JSONLD
   description: '',
-  headline: 'Websites with Character', // Headline for schema.org JSONLD
+  headline: 'Gatsby Theme for adding polished, responsive legal pages.', // Headline for schema.org JSONLD
   url: 'https://www.littleandbig.com.au', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: '/logos/logo-1024.png', // Used for SEO
+  logo: '/logos/logo-1024.jpg', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest

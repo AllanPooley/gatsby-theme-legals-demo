@@ -3,13 +3,10 @@ require('dotenv').config({
 });
 
 const {
-  NODE_ENV,
   IS_STAGING,
   PRISMIC_REPO_NAME,
   PRISMIC_API_KEY,
 } = process.env;
-
-const prismicHtmlSerializer = require('./src/gatsby/htmlSerializer');
 
 const website = require('./config/website');
 
