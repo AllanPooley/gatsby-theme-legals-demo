@@ -74,6 +74,7 @@ module.exports = {
         siteName: website.title,
       },
     },
+    'gatsby-plugin-theme-ui',
     'gatsby-plugin-lodash',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
