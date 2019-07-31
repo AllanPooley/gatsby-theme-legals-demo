@@ -56,6 +56,10 @@
         @include media-down(mobile) {
           margin-bottom: 30px;
         }
+
+        @include media-down(small-mobile) {
+          text-align: center;
+        }
       }
 
       .subtitle {
@@ -78,6 +82,10 @@
 
           @include media-down(mobile) {
             margin-bottom: 5px;
+          }
+
+          @include media-down(small-mobile) {
+            text-align: center;
           }
         }
       }
@@ -102,21 +110,13 @@
             margin-bottom: 10px;
           }
 
-          @include media-down(small-mobile) {
-            width: 100%;
-          }
-
           &:last-child {
             margin-right: 0;
           }
 
           .styled-button {
-            @include media-down(small-mobile) {
-              width: 100%;
-            }
+
           }
-
-
         }
       }
     }
