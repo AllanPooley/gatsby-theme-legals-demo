@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Layout } from '../components';
 import { Wrapper } from '../components/common';
 
@@ -10,6 +10,7 @@ class Index extends Component {
         page: {
           data: pageData,
         },
+        legalPages,
       },
       location,
     } = this.props;
@@ -23,10 +24,28 @@ class Index extends Component {
       metaDescription,
       openGraphImage,
     };
+    const legalPageData = legalPages.edges.map(page => ({
+      slug: page.node.uid,
+      title: page.node.data.pageTitle.text,
+    }));
     return (
       <Layout location={location} seoData={seoData}>
         <Wrapper>
-          <span>Home</span>
+          <section className="home-hero">
+            <h1>Gatsby Theme Legals</h1>
+            <ul>
+              { legalPageData && legalPageData.map(page => (
+                <li>
+                  <Link
+                    key={page.slug}
+                    to={page.slug}
+                  >
+                    {page.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </Wrapper>
       </Layout>
     );
@@ -52,6 +71,18 @@ export const pageQuery = graphql`
           alt
           copyright
           url
+        }
+      }
+    }
+    legalPages: allPrismicLegal {
+      edges {
+        node {
+          uid
+          data {
+            pageTitle: page_name {
+              text
+            }
+          }
         }
       }
     }
