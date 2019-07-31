@@ -4,20 +4,20 @@ module.exports = {
   titleAlt: 'Gatsby Theme Prismic Legals', // Title for JSONLD
   description: '',
   headline: 'Gatsby Theme for adding polished, responsive legal pages.', // Headline for schema.org JSONLD
-  url: 'https://www.littleandbig.com.au', // Domain of your site. No trailing slash!
+  url: 'https://gatsby-theme-legals.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   logo: '/logos/logo-1024.jpg', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest
   favicon: 'src/favicon.png', // Used for manifest favicon generation
-  shortName: 'Little & Big', // shortname for manifest. MUST be shorter than 12 characters
+  shortName: 'Gatsby Theme Legals', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Little & Big', // Author for schemaORGJSONLD
-  themeColor: '#3D63AE',
-  backgroundColor: '#EBEDF2',
+  themeColor: '#5B2589',
+  backgroundColor: '#FCFAFF',
 
   twitter: '@littleplusbig', // Twitter Username
-  facebook: 'littleandbig', // Facebook Site Name
+  facebook: 'littleandbigstudio', // Facebook Site Name
 
   skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
 };
