@@ -4,7 +4,7 @@
   background-size: 100%;
   background-repeat: repeat;
   background-position: top;
-  padding: 80px;
+  padding: 80px 40px 120px;
 
   @include media-down(tablet) {
     padding: 60px 40px 80px;
@@ -25,7 +25,7 @@
 
     .inner-container {
       background-color: $off-white;
-      padding: 120px 60px 100px;
+      padding: 120px 80px 100px;
       position: relative;
       z-index: 2;
 
@@ -40,6 +40,7 @@
       .magic-command {
         display: block;
         color: $primary;
+        font-size: 14px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
         margin-bottom: 30px;
@@ -124,7 +125,7 @@
       content: '';
       position: absolute;
       width: 100%;
-      height: calc(100% + 20px);
+      height: calc(100%);
       top: 0;
       left: 0;
       transform: translateX(30px) translateY(30px);
@@ -132,8 +133,40 @@
       background-color: $primary-lighter;
 
       @include media-down(mobile) {
+        height: calc(100% + 20px);
         transform: translateX(20px) translateY(-20px);
       }
     }
+  }
+}
+
+.home-body {
+  padding: 120px 0;
+
+  @include media-down(mobile) {
+    padding: 60px 0;
+  }
+
+  .body-section {
+    padding: 0 80px;
+    margin-bottom: 20px;
+
+    @include media-down(tablet) {
+      padding: 0 120px;
+    }
+
+    @include media-down(mobile) {
+      padding: 0 40px;
+    }
+
+    @include media-down(small-mobile) {
+      padding: 0;
+    }
+  }
+
+  .section-title {
+    border-bottom: 2px solid $grey;
+    padding: 30px 0 20px;
+    margin-bottom: 30px;
   }
 }

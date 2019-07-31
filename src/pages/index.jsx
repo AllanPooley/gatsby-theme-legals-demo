@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { graphql, Link } from 'gatsby';
 import { Layout } from '../components';
-import { Wrapper } from '../components/common';
+import { Wrapper, HtmlContent } from '../components/common';
 import './index.scss';
+
+export const generateKey = pre => `${pre}_${new Date().getTime()}`;
 
 class Index extends Component {
   render() {
@@ -16,6 +18,7 @@ class Index extends Component {
       location,
     } = this.props;
     const {
+      sections,
       metaTitle,
       metaDescription,
       openGraphImage,
@@ -58,6 +61,18 @@ class Index extends Component {
             </div>
           </Wrapper>
         </section>
+        <section className="home-body">
+          <Wrapper>
+            { sections && sections.map((section, index) => (
+              <div key={generateKey(index)} className="body-section">
+                <h2 className="section-title">
+                  {section.sectionHeading.text}
+                </h2>
+                <HtmlContent content={section.content.html} />
+              </div>
+            ))}
+          </Wrapper>
+        </section>
       </Layout>
     );
   }
@@ -70,6 +85,14 @@ export const pageQuery = graphql`
     page: prismicHome {
       uid,
       data {
+        sections {
+          content {
+            html
+          }
+          sectionHeading: section_heading {
+            text
+          }
+        }
         metaTitle: meta_title {
           html
           text
