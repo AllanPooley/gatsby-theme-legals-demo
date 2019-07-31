@@ -1,7 +1,7 @@
 body {
   @include body-font();
   color: $off-black;
-  line-height: 1.1em;
+  line-height: 1.5em;
 }
 
 // --------------------------------------------------------------------------
@@ -15,17 +15,25 @@ h5,
 h6 {
   @include headings-font();
   color: $off-black;
-  line-height: 1.5em;
+  line-height: 1.1em;
 }
 
 //[14, 16, 20, 24, 36, 44, 64, 80]
 
 h1 {
   font-size: 80px;
+
+  @include media-down(tablet) {
+    font-size: 64px;
+  }
+
+  @include media-down(mobile) {
+    font-size: 40px;
+  }
 }
 
 h2 {
-
+  font-size: 36px;
 }
 
 h3 {

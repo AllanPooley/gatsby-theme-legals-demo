@@ -35,9 +35,10 @@ class Index extends Component {
           <Wrapper>
             <div className="container">
               <div className="inner-container">
+                <span className="magic-command">yarn add @littleplusbig/gatsby-theme-legals-prismic</span>
                 <h1 className="title">Gatsby Theme Legals</h1>
                 <div className="subtitle">
-                  <p>Making legal documents easy to read.</p>
+                  <p>Makes legal documents easy to read.</p>
                   <p>Check out the demos below.</p>
                 </div>
                 <ul className="navigation-buttons">
@@ -48,7 +49,7 @@ class Index extends Component {
                         key={page.slug}
                         to={page.slug}
                       >
-                        <span>{page.title}</span>
+                        <span>{`Demo ${page.title}`}</span>
                       </Link>
                     </li>
                   ))}

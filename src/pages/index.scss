@@ -1,6 +1,24 @@
 .home-hero {
   background-color: $primary;
+  background-image: url('../assets/images/grid-background.svg');
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: top;
   padding: 80px;
+
+  @include media-down(tablet) {
+    padding: 60px 40px 80px;
+  }
+
+  @include media-down(mobile) {
+    padding: 60px 20px 0 0 ;
+  }
+
+  .wrapper {
+    @include media-down(small-mobile) {
+      padding: 0 0 0 20px;
+    }
+  }
 
   .container {
     position: relative;
@@ -11,8 +29,32 @@
       position: relative;
       z-index: 2;
 
+      @include media-down(mobile) {
+        padding: 80px 40px 60px;
+      }
+
+      @include media-down(small-mobile) {
+        padding: 60px 20px 40px;
+      }
+
+      .magic-command {
+        display: block;
+        color: $primary;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @include media-down(mobile) {
+          display: none;
+        }
+      }
+
       .title {
         margin-bottom: 50px;
+
+        @include media-down(mobile) {
+          margin-bottom: 30px;
+        }
       }
 
       .subtitle {
@@ -21,8 +63,21 @@
         color: #333333;
         margin-bottom: 80px;
 
+        @include media-down(tablet) {
+          margin-bottom: 60px;
+        }
+
+        @include media-down(mobile) {
+          font-size: 16px;
+          margin-bottom: 40px;
+        }
+
         p {
           margin-bottom: 10px;
+
+          @include media-down(mobile) {
+            margin-bottom: 5px;
+          }
         }
       }
 
@@ -30,8 +85,37 @@
         display: flex;
         flex-direction: row;
 
+        @include media-down(mobile) {
+          flex-direction: column;
+        }
+
+        @include media-down(small-mobile) {
+          align-items: center;
+        }
+
         .nav-button {
           margin-right: 15px;
+
+          @include media-down(mobile) {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+
+          @include media-down(small-mobile) {
+            width: 100%;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .styled-button {
+            @include media-down(small-mobile) {
+              width: 100%;
+            }
+          }
+
+
         }
       }
     }
@@ -40,12 +124,16 @@
       content: '';
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: calc(100% + 20px);
       top: 0;
       left: 0;
-      transform: translateX(2.5vh) translateY(2.5vh);
+      transform: translateX(30px) translateY(30px);
       z-index: 1;
       background-color: $primary-lighter;
+
+      @include media-down(mobile) {
+        transform: translateX(20px) translateY(-20px);
+      }
     }
   }
 }
