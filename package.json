@@ -15,7 +15,7 @@
     "format": "prettier \"**/*.md \" --write"
   },
   "dependencies": {
-    "@littleplusbig/gatsby-theme-legals-prismic": "^1.0.0",
+    "@littleplusbig/gatsby-theme-legals-prismic": "^1.0.6",
     "@reach/skip-nav": "^0.1.2",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
@@ -32,7 +32,6 @@
     "gatsby-plugin-sharp": "^2.0.23",
     "gatsby-plugin-sitemap": "^2.1.0",
     "gatsby-source-prismic": "^2.2.0",
-    "gatsby-theme-ui": "^0.2.0",
     "gatsby-transformer-sharp": "^2.1.15",
     "lodash": "^4.17.11",
     "lodash.merge": "^4.6.2",
