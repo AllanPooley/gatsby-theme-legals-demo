@@ -1187,10 +1187,10 @@
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-"@littleplusbig/gatsby-theme-legals-prismic@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@littleplusbig/gatsby-theme-legals-prismic/-/gatsby-theme-legals-prismic-1.0.6.tgz#16fbda528a855f59dda7a5acf12cd7e4b04fee44"
-  integrity sha512-XSE8Qq014K2avV83iaFMIVDAi3bOuxnL/fhCzqRvZVbu5utjs/f2VidVs4WTy7jVcKMBHrMPJnFShRWzgeHB1A==
+"@littleplusbig/gatsby-theme-legals-prismic@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@littleplusbig/gatsby-theme-legals-prismic/-/gatsby-theme-legals-prismic-1.0.7.tgz#117d40fd36be7727efc87dc0d06fc3b9c0bed1fa"
+  integrity sha512-+Ppt4hr4jNTNeDGki5l37VQxa/P81RsrEUN7tib5w5BXyKeKx+JHsIJO8u7oG2xOha0Vd9UNsZ9eTRcDAP7spw==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
