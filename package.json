@@ -15,7 +15,7 @@
     "format": "prettier \"**/*.md \" --write"
   },
   "dependencies": {
-    "@littleplusbig/gatsby-theme-legals-prismic": "^1.0.0",
+    "@littleplusbig/gatsby-theme-legals-prismic": "^1.0.10",
     "@reach/skip-nav": "^0.1.2",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",

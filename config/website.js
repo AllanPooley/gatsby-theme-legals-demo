@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
-  title: 'Gatsby Theme Prismic Legals', // Navigation and Site Title
-  titleAlt: 'Gatsby Theme Prismic Legals', // Title for JSONLD
+  title: 'Gatsby Theme Legals Prismic Demo', // Navigation and Site Title
+  titleAlt: 'Gatsby Theme Legals Prismic Demo', // Title for JSONLD
   description: '',
   headline: 'Gatsby Theme for adding polished, responsive legal pages.', // Headline for schema.org JSONLD
   url: 'https://gatsby-theme-legals.netlify.com', // Domain of your site. No trailing slash!
