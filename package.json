@@ -17,7 +17,7 @@
   "dependencies": {
     "@littleplusbig/gatsby-theme-legals-prismic": "^1.0.12",
     "@reach/skip-nav": "^0.1.2",
-    "gatsby": "^2.1.19",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.0.30",
     "gatsby-plugin-canonical-urls": "^2.0.12",
     "gatsby-plugin-google-analytics": "^2.0.19",
